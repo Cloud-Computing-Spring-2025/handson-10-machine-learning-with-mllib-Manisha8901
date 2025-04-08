@@ -1,0 +1,23 @@
+Customer Churn Modeling output
+==============================
+
+=== Data Preprocessing ===
+Sample processed rows (features and label):
+Row(features=DenseVector([1.0, 12.0, 37.76, 379.54, 0.0, 1.0, 1.0, 0.0]), label=1.0)
+Row(features=DenseVector([0.0, 45.0, 42.63, 2238.04, 1.0, 1.0, 0.0, 1.0]), label=0.0)
+Row(features=SparseVector(8, {1: 13.0, 2: 37.86, 3: 407.69, 7: 1.0}), label=0.0)
+Row(features=DenseVector([0.0, 5.0, 74.79, 338.79, 1.0, 1.0, 0.0, 0.0]), label=0.0)
+Row(features=DenseVector([0.0, 35.0, 30.43, 746.96, 1.0, 0.0, 0.0, 1.0]), label=0.0)
+
+=== Logistic Regression ===
+AUC: 0.7884
+
+=== Feature Selection (Chi-Square) ===
+Top 5 selected features (first 5 rows):
+Row(selectedFeatures=DenseVector([1.0, 12.0, 1.0, 1.0, 0.0]), label=1.0)
+Row(selectedFeatures=DenseVector([0.0, 45.0, 1.0, 0.0, 1.0]), label=0.0)
+Row(selectedFeatures=SparseVector(5, {1: 13.0, 4: 1.0}), label=0.0)
+Row(selectedFeatures=DenseVector([0.0, 5.0, 1.0, 0.0, 0.0]), label=0.0)
+Row(selectedFeatures=DenseVector([0.0, 35.0, 0.0, 0.0, 1.0]), label=0.0)
+
+=== Model Tuning and Comparison ===
